@@ -74,7 +74,7 @@
 	function resize(){ width = canvas.width = window.innerWidth; height = canvas.height = window.innerHeight; ctx.font = fontSize + 'px monospace'; }
 	function resetDrops(){ columns = Math.max(1, Math.floor(width / fontSize)); drops = []; var i; for(i=0;i<columns;i++){ drops[i] = Math.floor(Math.random()*(-20)); } }
 	function drawMatrix(){
-		ctx.fillStyle = 'rgba(0, 8, 0, 0.08)'; ctx.fillRect(0, 0, width, height);
+		ctx.fillStyle = 'rgba(0, 6, 0, 0.16)'; ctx.fillRect(0, 0, width, height);
 		ctx.fillStyle = '#00ff66'; ctx.textBaseline = 'top';
 		var i, text, x, y; for(i=0;i<columns;i++){ text = pick(charset); x = i*fontSize; y = drops[i]*fontSize; ctx.fillText(text, x, y); if(y>height && Math.random()>0.975){ drops[i] = Math.floor(Math.random()*(-20)); } else { drops[i] += 1; } }
 	}
