@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты — bag1</title>
+	<meta name="description" content="Свяжитесь для заказа парсеров OZON/WB или разработки Telegram-бота.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<style>
+	.form{display:grid; gap:12px; max-width:640px}
+	.input, .textarea{width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:12px; color:var(--text); padding:12px 14px}
+	.textarea{min-height:140px; resize:vertical}
+	.row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+	@media (max-width: 720px){ .row{grid-template-columns:1fr} }
+	</style>
+</head>
+<body>
+	<canvas id="bg-canvas" aria-hidden="true"></canvas>
+	<div id="cursor-glow" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="container nav">
+			<a class="logo" href="index.html"><span>{</span> <span class="logo-text" data-text="bag1">bag1</span> <span>}</span></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="contact.html" class="active">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container" style="padding:48px 0 96px">
+		<h1 style="margin:0 0 18px">Контакты</h1>
+		<p style="color:var(--muted); margin:0 0 24px">Опишите задачу — предложу архитектуру и сроки.</p>
+
+		<form class="form" onsubmit="event.preventDefault(); alert('Спасибо! Я свяжусь с вами.'); this.reset();">
+			<div class="row">
+				<input class="input" type="text" name="name" placeholder="Имя" required>
+				<input class="input" type="email" name="email" placeholder="Email" required>
+			</div>
+			<input class="input" type="text" name="topic" placeholder="Тема проекта" required>
+			<textarea class="textarea" name="message" placeholder="Кратко о задаче" required></textarea>
+			<button class="btn primary" type="submit">Отправить</button>
+		</form>
+
+		<div style="height:18px"></div>
+		<div class="features" style="padding:0">
+			<article class="feature"><h3>Telegram</h3><p><a href="#" style="color:var(--accent)">@bogdantiger</a></p></article>
+			<article class="feature"><h3>Email</h3><p><a href="mailto:bogdanbelogurov7@mail.ru" style="color:var(--accent)">bogdanbelogurov7@mail.ru</a></p></article>
+			<article class="feature"><h3>GitHub</h3><p><a href="#" style="color:var(--accent)">github.com/bag1-bot</a></p></article>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> bag1. Парсеры и боты.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

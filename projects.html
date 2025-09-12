@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ру">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Проекты — bag1</title>
+	<meta name="description" content="Портфолио проектов: парсеры OZON, Wildberries и Telegram-боты под ключ.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<canvas id="bg-canvas" aria-hidden="true"></canvas>
+	<div id="cursor-glow" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="container nav">
+			<a class="logo" href="index.html"><span>{</span> <span class="logo-text" data-text="bag1">bag1</span> <span>}</span></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="projects.html" class="active">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container" style="padding:48px 0 96px">
+		<h1 style="margin:0 0 18px">Проекты</h1>
+		<p style="color:var(--muted); margin:0 0 24px">Подборка недавних работ. Детали и демо по запросу.</p>
+
+		<section class="features" style="padding:0">
+			<article class="feature tilt" tabindex="0">
+				<h3>Парсер OZON</h3>
+				<p>Сбор цен, остатков, рейтингов и атрибутов по категориям и продавцам. Ротация прокси, антибот, ретраи.</p>
+				<ul style="margin:10px 0 0; padding-left:18px; color:var(--muted)">
+					<li>Скорость: до 50k карточек/сутки</li>
+					<li>Экспорт: CSV/JSON, база данных</li>
+				</ul>
+			</article>
+
+			<article class="feature tilt" tabindex="0">
+				<h3>Парсер Wildberries</h3>
+				<p>Мониторинг конкурентов, динамика цен и отзывов, проверка скрытых карточек, антикапча.</p>
+				<ul style="margin:10px 0 0; padding-left:18px; color:var(--muted)">
+					<li>Инкрементальные обновления</li>
+					<li>Гибкие фильтры и расписание</li>
+				</ul>
+			</article>
+
+			<article class="feature tilt" tabindex="0">
+				<h3>Telegram‑бот для продаж</h3>
+				<p>Воронка продаж, оплатa, выдача ключей/файлов, админ-панель, уведомления и аналитика.</p>
+				<ul style="margin:10px 0 0; padding-left:18px; color:var(--muted)">
+					<li>Подключение платёжных шлюзов</li>
+					<li>Интеграции с CRM и Google Sheets</li>
+				</ul>
+			</article>
+		</section>
+
+		<h2 style="margin:32px 0 12px">Кейсы</h2>
+		<section class="features" style="padding:0">
+			<article class="feature case-card tilt" tabindex="0">
+				<video src="assets/img/Cook-Service.mp4" controls preload="metadata" playsinline></video>
+				<h3>Cook‑Service — бот отзывов для ресторана</h3>
+				<p>Сбор и модерация отзывов с возможностью администраторам выгружать данные в Excel для аналитики качества сервиса.</p>
+				<ul class="case-list">
+					<li>Экспорт отзывов в Excel одним кликом</li>
+					<li>Роли и доступы для администраторов</li>
+				</ul>
+			</article>
+
+			<article class="feature case-card tilt" tabindex="0">
+				<video src="assets/img/Fedorenko Avto Podbor.mp4" controls preload="metadata" playsinline></video>
+				<h3>Fedorenko Avto Podbor — каталог авто</h3>
+				<p>Бот позволяет просматривать каталог машин, полностью синхронизированный с Google Sheets. Заявки от клиентов поступают в рабочую группу сотрудников.</p>
+				<ul class="case-list">
+					<li>Каталог из Google Sheets, обновления в реальном времени</li>
+					<li>Автоматическая отправка заявок в группу для обработки</li>
+				</ul>
+			</article>
+
+			<article class="feature case-card tilt" tabindex="0">
+				<video src="assets/img/ML Service.mp4" controls preload="metadata" playsinline></video>
+				<h3>ML Service — бот сервисного центра</h3>
+				<p>Распознаёт модель телефона по тексту, связывает с консультантом, показывает локацию сервиса и подтягивает прайс из Google Sheets.</p>
+				<ul class="case-list">
+					<li>Распознавание модели по описанию клиента</li>
+					<li>Онлайн‑консультация и маршрут до сервиса</li>
+					<li>Динамический прайс из Google Sheets</li>
+				</ul>
+			</article>
+
+			<article class="feature case-card tilt" tabindex="0">
+				<video src="assets/img/Выход есть.mp4" controls preload="metadata" playsinline></video>
+				<h3>Выход есть — психологическая поддержка</h3>
+				<p>Бот для людей, которым нужна помощь психолога: оплата внутри бота, прямая связь со специалистами и удобная выдача ссылки на закрытый канал.</p>
+				<ul class="case-list">
+					<li>Подключён эквайринг для безопасных оплат</li>
+					<li>Мессенджер‑чат со специалистом прямо в боте</li>
+					<li>Автоматическая выдача приглашения в канал</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> bag1. Парсеры и боты.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

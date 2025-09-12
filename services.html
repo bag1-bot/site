@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Услуги — bag1</title>
+	<meta name="description" content="Услуги: парсеры для OZON, Wildberries, Telegram-боты, автоматизация и интеграции.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<canvas id="bg-canvas" aria-hidden="true"></canvas>
+	<div id="cursor-glow" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="container nav">
+			<a class="logo" href="index.html"><span>{</span> <span class="logo-text" data-text="bag1">bag1</span> <span>}</span></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="services.html" class="active">Услуги</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container" style="padding:48px 0 96px">
+		<h1 style="margin:0 0 18px">Услуги</h1>
+		<p style="color:var(--muted); margin:0 0 24px">Решения под ключ: от идеи до поддержки в проде.</p>
+
+		<section class="features" style="padding:0">
+			<article class="feature">
+				<h3>Парсеры маркетплейсов</h3>
+				<p>Проектирование схем данных, обход антибота, распределённые очереди и контроль ошибок.</p>
+			</article>
+			<article class="feature">
+				<h3>Telegram‑боты и интеграции</h3>
+				<p>Платежи, подписки, роли, складские процессы, интеграции с CRM/Sheets.</p>
+			</article>
+			<article class="feature">
+				<h3>Архитектура и DevOps</h3>
+				<p>Docker, CI/CD, логирование, метрики, алерты и SLA/SLI в продакшене.</p>
+			</article>
+		</section>
+
+		<section class="features" style="padding-top:12px">
+			<article class="feature">
+				<h3>Технологии</h3>
+				<p style="margin:0">Python, Node.js, Playwright/Puppeteer, Requests, Postgres, Redis, RabbitMQ, Docker, Nginx.</p>
+			</article>
+			<article class="feature">
+				<h3>Подход</h3>
+				<p style="margin:0">SOLID, тестирование ключевых частей, наблюдаемость, приоритет простоты и устойчивости.</p>
+			</article>
+			<article class="feature">
+				<h3>Результат</h3>
+				<p style="margin:0">Прозрачные сроки, предсказуемые релизы, понятная поддержка.</p>
+			</article>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> bag1. Парсеры и боты.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
