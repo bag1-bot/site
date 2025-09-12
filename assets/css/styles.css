@@ -29,7 +29,7 @@ body{
 	filter: blur(18px); z-index:-1}
 
 /* Header */
-.site-header{position:sticky; top:0; backdrop-filter: blur(8px); background:linear-gradient(180deg, rgba(11,15,20,0.8), rgba(11,15,20,0)); border-bottom:1px solid var(--line); z-index:1000}
+.site-header{position:sticky; top:0; backdrop-filter: blur(8px); background:linear-gradient(180deg, rgba(11,15,20,0.92), rgba(11,15,20,0.2)); border-bottom:1px solid var(--line); z-index:1000}
 .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0; position:relative}
 .logo{color:var(--text); text-decoration:none; font-weight:800; letter-spacing:.5px}
 .logo span{color:var(--accent)}
@@ -37,7 +37,7 @@ body{
 .menu-toggle:before{content:""; display:block; width:20px; height:2px; background:var(--text); margin:0 auto; box-shadow:0 6px 0 var(--text), 0 -6px 0 var(--text)}
 nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
 nav a{color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:10px; border:1px solid transparent; transition:all .25s ease}
-nav a:hover, nav a.active{color:var(--text); border-color:var(--line); background:rgba(255,255,255,0.03)}
+nav a:hover, nav a.active{color:var(--text); border-color:var(--line); background:rgba(5,10,9,0.18)}
 
 /* Hero */
 .hero{display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:36px; padding:72px 0}
@@ -65,8 +65,8 @@ nav a:hover, nav a.active{color:var(--text); border-color:var(--line); backgroun
 
 /* Features */
 .features{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; padding:24px 0 96px}
-.feature{background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:14px; padding:18px; transition:transform .2s ease, background .3s ease, border-color .3s ease}
-.feature:hover{transform:translateY(-4px); background:rgba(255,255,255,0.05); border-color:#1b3a2d}
+.feature{background:rgba(5,10,9,0.45); border:1px solid var(--line); border-radius:14px; padding:18px; transition:transform .2s ease, background .3s ease, border-color .3s ease}
+.feature:hover{transform:translateY(-4px); background:rgba(5,10,9,0.6); border-color:#1b3a2d}
 /* Feature titles little tilt on hover */
 .feature h3{transition: transform .2s ease}
 .feature:hover h3{transform: translateY(-2px)}
@@ -104,7 +104,7 @@ nav a:hover, nav a.active{color:var(--text); border-color:var(--line); backgroun
 .about p{color:var(--muted)}
 .about ul{margin:0; padding-left:18px; color:var(--muted)}
 .about-visual .ascii-card{position:relative; background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow: 0 10px 40px rgba(0,0,0,.3)}
-.about-visual .ascii-card::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(120% 100% at 50% -10%, rgba(0,255,102,0.06), rgba(0,0,0,0) 45%), radial-gradient(140% 100% at 50% 120%, rgba(0,0,0,0.25), rgba(0,0,0,0.45) 60%)}
+.about-visual .ascii-card::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(120% 100% at 50% -10%, rgba(0,255,102,0.04), rgba(0,0,0,0) 45%), radial-gradient(140% 100% at 50% 120%, rgba(0,0,0,0.35), rgba(0,0,0,0.55) 60%)}
 #hacker-canvas{display:block; width:100%; height:auto; background:#020403}
 
 /* Laptop v2 */
@@ -146,7 +146,7 @@ nav a:hover, nav a.active{color:var(--text); border-color:var(--line); backgroun
 .nb.screen-on .nb-screen{opacity:1}
 
 /* Intro window */
-.intro-window{width:min(820px,92%); background:rgba(5,10,9,0.9); border:1px solid #0f1f18; border-radius:12px; box-shadow:0 20px 80px rgba(0,0,0,.6); overflow:hidden; transform-origin:center;}
+.intro-window{width:min(820px,92%); background:rgba(5,10,9,0.94); border:1px solid #0f1f18; border-radius:12px; box-shadow:0 20px 80px rgba(0,0,0,.6); overflow:hidden; transform-origin:center;}
 .intro-window .card-header{display:flex; gap:6px; padding:10px; border-bottom:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0))}
 .intro-screen{padding:18px; font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; color:#a7f3d0; min-height:160px; white-space:pre-wrap; margin:0}
 .intro-error{margin:0; padding:6px 18px 18px; font:800 clamp(28px,6vw,64px)/1.1 'Inter',sans-serif; letter-spacing:2px; color:#ff3c50; text-align:center; opacity:0; transform:scale(.98); transition:opacity .35s ease, transform .35s ease}
@@ -184,7 +184,7 @@ nav a:hover, nav a.active{color:var(--text); border-color:var(--line); backgroun
 @media (max-width: 780px){
 	.menu-toggle{display:inline-block}
 	.nav{align-items:center}
-	.nav nav{position:absolute; top:58px; right:4%; left:4%; background:rgba(5,8,12,0.95); border:1px solid var(--line); border-radius:12px; padding:10px; display:none; z-index:1001}
+	.nav nav{position:absolute; top:58px; right:4%; left:4%; background:rgba(5,8,12,0.98); border:1px solid var(--line); border-radius:12px; padding:10px; display:none; z-index:1001}
 	.nav.open nav{display:block}
 	nav ul{flex-direction:column; gap:8px}
 	nav a{display:block}

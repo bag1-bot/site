@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<style>
 	.form{display:grid; gap:12px; max-width:640px}
-	.input, .textarea{width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:12px; color:var(--text); padding:12px 14px}
+	.input, .textarea{width:100%; background:rgba(5,10,9,0.5); border:1px solid var(--line); border-radius:12px; color:var(--text); padding:12px 14px}
 	.textarea{min-height:140px; resize:vertical}
 	.row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
 	@media (max-width: 720px){ .row{grid-template-columns:1fr} }
@@ -23,6 +23,7 @@
 	<header class="site-header">
 		<div class="container nav">
 			<a class="logo" href="index.html"><span>{</span> <span class="logo-text" data-text="bag1">bag1</span> <span>}</span></a>
+			<button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню"></button>
 			<nav>
 				<ul>
 					<li><a href="index.html">Главная</a></li>
