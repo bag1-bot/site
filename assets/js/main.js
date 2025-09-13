@@ -199,6 +199,15 @@
 		initHackerAscii();
 		initDecode();
 		var mt = qs('#menu-toggle'); var navWrap = qs('.nav'); if(mt && navWrap){ mt.addEventListener('click', function(){ navWrap.classList.toggle('open'); }); }
+		
+		// Initialize ghost card after a delay
+		setTimeout(function(){
+			if(typeof initGhostCard === 'function'){
+				initGhostCard();
+			} else {
+				console.log('Ghost card script not loaded yet');
+			}
+		}, 2000);
 	});
 
 	// Parallax
