@@ -273,17 +273,9 @@ const fragskull = `
       }
 `;
 
-window.initGhostCard = function() {
-  console.log("Initializing ghost card...");
+function initGhostCard() {
   container = document.getElementById("ghost-card-container");
-  if (!container) {
-    console.log("Ghost card container not found!");
-    return;
-  }
-  console.log("Ghost card container found, starting initialization...");
-  
-  // Clear loading text
-  container.innerHTML = '';
+  if (!container) return;
 
   camera = new THREE.PerspectiveCamera(30, width / height, 1, 10000);
   camera.position.z = 100;
@@ -326,7 +318,7 @@ window.initGhostCard = function() {
   planeback();
   loadskull();
   animate();
-};
+}
 
 function plane() {
   var geometry = new THREE.PlaneGeometry(20, 30);
@@ -531,14 +523,7 @@ function handleResize() {
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
   // Wait a bit for the reveal animation
-  setTimeout(window.initGhostCard, 1000);
+  setTimeout(initGhostCard, 1000);
 });
-
-// Also try to initialize immediately if DOM is already loaded
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', window.initGhostCard);
-} else {
-  setTimeout(window.initGhostCard, 1000);
-}
 
 window.addEventListener("resize", handleResize, false);

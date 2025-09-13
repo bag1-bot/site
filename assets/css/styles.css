@@ -101,7 +101,7 @@ nav a:hover, nav a.active{color:var(--text); border-color:var(--line); backgroun
 .about{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:stretch; padding:24px 0 96px}
 
 /* Ghost Card Section */
-.ghost-card-section{padding:48px 0 96px; text-align:center; opacity:1!important; transform:none!important}
+.ghost-card-section{padding:48px 0 96px; text-align:center}
 .ghost-card-section h2{margin:0 0 12px}
 .ghost-card-section p{color:var(--muted); margin:0 0 32px}
 #ghost-card-container{position:relative; width:100%; max-width:650px; height:400px; margin:0 auto; border-radius:16px; overflow:hidden; background:var(--card); border:1px solid var(--line); box-shadow:0 10px 40px rgba(0,0,0,.3)}
