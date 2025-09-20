@@ -28,7 +28,6 @@ body{
 	background: radial-gradient(closest-side, rgba(0,255,102,0.18), transparent 70%);
 	filter: blur(18px); z-index:-1}
 
-<<<<<<< HEAD
 /* Interactive background effects */
 #interactive-particles{position:fixed; inset:0; pointer-events:none; z-index:-1}
 .particle{position:absolute; width:2px; height:2px; background:var(--accent); border-radius:50%; 
@@ -118,8 +117,6 @@ body{cursor:none}
 	100%{opacity:0; transform:scale(0.3)}
 }
 
-=======
->>>>>>> d3c39cbd6112ea821d4b9c7dffdc327cb6f6c68f
 /* Header */
 .site-header{position:sticky; top:0; backdrop-filter: blur(8px); background:linear-gradient(180deg, rgba(11,15,20,0.92), rgba(11,15,20,0.2)); border-bottom:1px solid var(--line); z-index:1000}
 .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0; position:relative}
