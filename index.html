@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bag1 — Парсеры, боты и автоматизация</title>
+	<meta name="description" content="Разработка парсеров для OZON, Wildberries и Telegram-ботов под разные ниши. Портфолио и услуги.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<!-- Фон -->
+	<canvas id="bg-canvas" aria-hidden="true"></canvas>
+	<div id="cursor-glow" aria-hidden="true"></div>
+	<div id="interactive-particles" aria-hidden="true"></div>
+	<div id="magnetic-field" aria-hidden="true"></div>
+	<div class="cyber-grid" aria-hidden="true"></div>
+	<div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+	
+	<!-- Background music -->
+	<audio id="bg-music" loop preload="auto" volume="0.2">
+		<source src="assets/img/tenet_06. FREEPORT.mp3" type="audio/mpeg">
+	</audio>
+
+	<!-- Intro overlay -->
+	<div class="intro-overlay" id="intro" aria-hidden="true">
+		<pre class="intro-screen" id="intro-screen"></pre>
+		<img id="intro-gif" src="assets/img/error.gif" alt="error intro" style="display:none;width:100%;height:100%;object-fit:cover;" />
+		<img id="intro-gif-anon" src="assets/img/anonym.gif" alt="anonym intro" style="display:none;width:100%;height:100%;object-fit:cover;" />
+	</div>
+
+	<!-- Навигация -->
+	<header class="site-header reveal-target">
+		<div class="container nav">
+			<a class="logo" href="index.html"><span>{</span> <span class="logo-text glitch-text" data-text="bag1">bag1</span> <span>}</span></a>
+			<button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню"></button>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="active">Главная</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="reveal-target">
+		<section class="hero container">
+			<div class="hero-text" data-parallax-depth="30">
+				<h1 data-decode>Программист, который <span class="accent glitch-text" data-text="доставляет данные">доставляет данные</span></h1>
+				<p data-decode>Парсеры и боты под ключ: OZON, Wildberries, маркетинг и автоматизация в Telegram. Надёжно, быстро, масштабируемо.</p>
+				<div class="hero-cta">
+					<a class="btn primary" href="projects.html">Смотреть проекты</a>
+					<a class="btn ghost" href="services.html">Услуги</a>
+				</div>
+			</div>
+			<div class="hero-visual" data-parallax-depth="10">
+				<div class="dev-card tilt" tabindex="0">
+					<div class="card-header">
+						<span class="dot red"></span>
+						<span class="dot yellow"></span>
+						<span class="dot green"></span>
+					</div>
+					<pre class="code">$ fetch_marketplace("ozon");
+$ fetch_marketplace("wb");
+$ deploy_bot("telegram");
+$ profit();</pre>
+				</div>
+			</div>
+		</section>
+
+		<section class="features container">
+			<div class="feature">
+				<h3 data-decode>OZON / WB парсинг</h3>
+				<p>Стабильные краулеры с антидетектом, ротацией прокси, капча-байпасом и очередями.</p>
+			</div>
+			<div class="feature">
+				<h3 data-decode>Telegram-боты</h3>
+				<p>Платёжные воронки, админ-панели, интеграции с CRM, webhooks/long-polling.</p>
+			</div>
+			<div class="feature">
+				<h3 data-decode>Инфраструктура</h3>
+				<p>Docker, мониторинг, алерты, ретраи и гарантированная доставка сообщений.</p>
+			</div>
+		</section>
+
+		<section class="about container" id="about">
+			<div class="about-text">
+				<h2 data-decode>Чем я занимаюсь</h2>
+				<p data-decode>Пишу надёжные программы на Python: парсеры для маркетплейсов и сайтов, Telegram‑боты под бизнес‑процессы и автоматизацию, интеграции с внешними системами. Строю решения, которые выдерживают нагрузку и дают предсказуемый результат.</p>
+				<h3 data-decode>Направления</h3>
+				<ul>
+					<li><strong>Маркетплейсы:</strong> OZON, Wildberries, СберМегаМаркет — анализ цен, остатков, конкурентов, поиск «мёртвых» карточек.</li>
+					<li><strong>Маркетинг и аналитика:</strong> агрегаторы отзывов, мониторинг выдачи, выгрузки в Excel/Sheets/БД.</li>
+					<li><strong>Telegram‑боты:</strong> продажи и подписки, CRM‑воронки, админ‑панели, интеграции с оплатой.</li>
+					<li><strong>Автоматизация:</strong> ETL‑пайплайны, планировщики, уведомления и алерты, отчёты.</li>
+				</ul>
+				<p>Фокус на архитектуре, наблюдаемости и простоте поддержки. Если нужно быстро и стабильно — мы сработаемся.</p>
+			</div>
+			<div class="about-visual">
+				<div class="ascii-card tilt" tabindex="0">
+					<div class="card-header">
+						<span class="dot red"></span>
+						<span class="dot yellow"></span>
+						<span class="dot green"></span>
+					</div>
+					<img src="assets/img/1519658977_hack.gif" alt="anonym" style="width:100%;height:100%;object-fit:cover;" />
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer reveal-target">
+		<div class="container">
+			<p>© <span id="year"></span> bag1. Парсеры и боты.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
+
