@@ -27,6 +27,7 @@
 		});
 	}
 
+<<<<<<< HEAD
 	// Interactive background effects
 	var particlesContainer, magneticField, isMouseMoving = false, mouseTimer, customCursor, audioContext, cursorTrails = [], bgMusic;
 	
@@ -484,6 +485,8 @@
 		}
 	}
 
+=======
+>>>>>>> d3c39cbd6112ea821d4b9c7dffdc327cb6f6c68f
 	// Intro typing
 	function initIntro(){
 		var intro = qs('#intro');
@@ -655,7 +658,10 @@
 		initLogoDecode();
 		initHackerAscii();
 		initDecode();
+<<<<<<< HEAD
 		initInteractiveBackground();
+=======
+>>>>>>> d3c39cbd6112ea821d4b9c7dffdc327cb6f6c68f
 		var mt = qs('#menu-toggle'); var navWrap = qs('.nav'); if(mt && navWrap){ mt.addEventListener('click', function(){ navWrap.classList.toggle('open'); }); }
 	});
 
